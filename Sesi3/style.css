@@ -1,0 +1,111 @@
+*,
+html,
+body {
+  padding: 0%;
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --hover-color: orange;
+  --hover-button: #224;
+}
+
+.navbar {
+  background-color: cornflowerblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 2px 8px 5px rgba(0, 0, 0, 0.5);
+}
+
+.text-icon > a {
+  width: 50vh;
+  display: flex;
+  align-items: center;
+  color: #eaeaea;
+  font-size: 60px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.icon {
+  height: 40%;
+  width: 40%;
+}
+
+.list-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-navbar > ul {
+  display: flex;
+  justify-content: start;
+  gap: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.list-navbar > ul > li > a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.list-navbar > ul > li > a:hover {
+  color: var(--hover-color);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.list-navbar > button {
+  border: none;
+  color: #222;
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 15px 12px;
+  margin-right: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.list-navbar > button:hover {
+  color: #f7f7f7;
+  background-color: var(--hover-button);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+@media screen and (min-width: 576px) and (max-width: 1000px) {
+  .text-icon > a {
+    width: 28vh;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .list-navbar {
+    width: 65vh;
+    padding: 0 12px;
+  }
+  .list-navbar > button {
+    display: none;
+  }
+}
