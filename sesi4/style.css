@@ -1,0 +1,329 @@
+*,
+html,
+body {
+  padding: 0%;
+  margin: 0%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  --hover-color: orange;
+  --hover-button: #224;
+}
+
+.navbar {
+  background-color: cornflowerblue;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 2px 8px 5px rgba(0, 0, 0, 0.5);
+}
+
+.text-icon > a {
+  width: 50vh;
+  display: flex;
+  align-items: center;
+  color: #eaeaea;
+  font-size: 60px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.icon {
+  height: 40%;
+  width: 40%;
+}
+
+.list-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.list-navbar > ul {
+  display: flex;
+  justify-content: start;
+  gap: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+
+.list-navbar > ul > li > a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.list-navbar > ul > li > a:hover {
+  color: var(--hover-color);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.list-navbar > button {
+  border: none;
+  color: #222;
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 10px 20px;
+  margin-right: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.list-navbar > button:hover {
+  color: #f7f7f7;
+  background-color: var(--hover-button);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+#image {
+  padding-top: 50px;
+  text-align: center;
+}
+
+#image > h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+#image > h3 {
+  font-size: 28px;
+}
+
+#image > img {
+  padding-top: 20px;
+  height: 85vh;
+  width: 80%;
+}
+
+.text-heading {
+  text-transform: capitalize;
+  color: royalblue;
+}
+
+.text-content {
+  background-color: #223;
+  color: #eaeaea;
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.card {
+  background-image: url(assets/images/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card > div {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card-content {
+  text-decoration: none;
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.card-content > div {
+  background-color: #999;
+  width: 50vh;
+  height: 250px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.card-content > div:hover {
+  background-color: #888;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+.card-content > div > img {
+  width: 90%;
+  height: 220px;
+  box-shadow: 2px 2px 20px 2px rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.card-content > div > p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #259;
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.footer {
+  font-size: 15px;
+  font-weight: bolder;
+  color: #eaeaea;
+  background-color: cornflowerblue;
+  padding: 5px;
+  text-align: center;
+}
+
+@media screen and (min-width: 576px) and (max-width: 1000px) {
+  .text-icon > a {
+    width: 28vh;
+  }
+  .text-heading {
+    padding: 5px 2px;
+  }
+  #image > img {
+    width: 90%;
+    height: 40%;
+  }
+  .text-content {
+    font-size: 25px;
+  }
+  .card > div {
+    background-color: #eaeaea;
+    opacity: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+  }
+  .card-content {
+    margin: 0%;
+    width: 100%;
+  }
+  .card-content > div {
+    width: 100%;
+    height: 400px;
+    padding: 0%;
+    background-color: silver;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .card-content > div:hover {
+    background-color: #999;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+  }
+  .card-content > div > img {
+    width: 100%;
+    height: 350px;
+  }
+  .card-content > div > p {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .list-navbar {
+    width: 65vh;
+    padding: 0 12px;
+  }
+  .list-navbar > button {
+    width: 100%;
+    padding: 10px;
+    background-color: #eaeaea;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.75) inset;
+    -webkit-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.75) inset;
+    -moz-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.75) inset;
+  }
+  #image {
+    padding-top: 10px;
+  }
+  #image > h1 {
+    font-size: 24px;
+  }
+
+  #image > h3 {
+    font-size: 18px;
+  }
+  #image > img {
+    height: 20%;
+    width: 100%;
+  }
+  .card > div {
+    background-color: #eaeaea;
+    opacity: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0;
+  }
+  .card-content {
+    margin: 0%;
+    width: 100%;
+  }
+  .card-content > div {
+    width: 100%;
+    height: 300px;
+    padding: 0%;
+    background-color: silver;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  .card-content > div:hover {
+    background-color: #999;
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+  }
+  .card-content > div > img {
+    width: 100%;
+    height: 250px;
+  }
+  .card-content > div > p {
+    font-size: 40px;
+  }
+  .mBottom {
+    margin-bottom: 50px;
+  }
+}
